@@ -1,0 +1,8 @@
+load('ex2.mat')
+load('ex3.mat')
+load('ex4.mat')
+figure()
+plot(rates2,psnr2,rates3,psnr3,rates4,psnr4)
+legend('Intra', 'Intra + Copy', 'Intra + Copy + Inter')
+xlabel('Bit-Rate[kbit/s]')
+ylabel('PSNR[dB]')
